@@ -20,7 +20,7 @@ $ npm i --save-dev @nuxtjs/apollo graphql-tag node-sass pug sass-loader vue-apol
 
 pugとsassを使ってるのでそのパッケージも使ってますが必要なければ省いてください。
 
-```nuxt.config.js
+```js:nuxt.config.js
 module.exports = {
   /* 省略 */
   modules: ['@nuxtjs/apollo'],
@@ -38,7 +38,7 @@ module.exports = {
 }
 ```
 
-```/apollo/network-interfaces/default.js
+```js:/apollo/network-interfaces/default.js
 import { createNetworkInterface } from 'apollo-client'
 
 export default (ctx) => {
@@ -52,7 +52,7 @@ export default (ctx) => {
 
 /apollo/network-interfaces/default.jsを作成してください。エンドポイントはGraphCMSのダッシュボードのSETTINGSから確認できます。
 
-```/apollo/queries/blog.gql
+```gql:/apollo/queries/blog.gql
 query Blog($slug: String!) {
   BlogPost(
     postSlug: $slug
@@ -77,7 +77,7 @@ query Blog($slug: String!) {
 
 /apollo/queries/blog.gqlを作成し、GraphQLを書いてください。上記は例です。GraphQLの書き方は<a href="https://www.sho-yamane.me/blog/3/" target="_blank">こちらの記事</a>やGraphCMSの公式ドキュメントを参照ください。
 
-```/pages/blog/_id.vue
+```vue:/pages/blog/_id.vue
 <script>
 import blog from '~/apollo/queries/blog'
 export default {
