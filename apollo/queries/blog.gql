@@ -1,0 +1,20 @@
+query Blog($slug: String!) {
+  BlogPost(
+    postSlug: $slug
+  ) {
+    postTags
+    postImage {
+      url
+    }
+    postTitle
+    postContent
+    postDateAndTime
+    authors {
+      authorName
+      authorImage {
+        url
+      }
+      authorBibliography
+    }
+  }
+}

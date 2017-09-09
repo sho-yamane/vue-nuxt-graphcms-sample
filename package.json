@@ -1,0 +1,36 @@
+{
+  "name": "nuxt-graphcms-sample",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Sho Yamane <sns.yamane@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "graphql-tag": "^2.4.2",
+    "nuxt": "^1.0.0-rc8",
+    "vue-apollo": "^2.1.0-rc.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/apollo": "^2.0.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.4",
+    "sass-loader": "^6.0.6",
+    "vue-markdown": "^2.2.4"
+  }
+}
