@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 $breakpoints: (
   'normal': 'screen and (max-width: 800px)'
