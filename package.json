@@ -13,9 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "graphql-tag": "^2.4.2",
-    "nuxt": "^1.0.0-rc8",
-    "vue-apollo": "^2.1.0-rc.4"
+    "nuxt": "^1.0.0-rc8"
   },
   "devDependencies": {
     "@nuxtjs/apollo": "^2.0.0",
@@ -28,9 +26,11 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "graphql-tag": "^2.4.2",
     "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.4",
     "sass-loader": "^6.0.6",
+    "vue-apollo": "^2.1.0-rc.4",
     "vue-markdown": "^2.2.4"
   }
 }
